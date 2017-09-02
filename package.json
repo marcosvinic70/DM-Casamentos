@@ -1,0 +1,9 @@
+{
+    "name": "dm-casamentos",
+    "version": "1.0.0",
+    "dependencies": {
+        "encoding": "^0.1.12",
+        "insecure": "0.0.4",
+        "nodemailer": "^4.1.0"
+    }
+}
