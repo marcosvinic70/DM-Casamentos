@@ -5,17 +5,15 @@ var server = {
 
 }
 
-var email = require('./sendMail');
 const insecure = require('insecure');
 
 insecure();
 
+var email = require('./sendMail');
+
 server.http.createServer(function (req, res) {
 
     res.writeHead(200, {'Content-Type': 'text/html'});
-
-    if(!email.sendMail())
-        res.write("Seloco");
     res.end();
 
 }).listen(8080);
