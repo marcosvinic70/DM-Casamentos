@@ -1,0 +1,134 @@
+/* GERAIS */
+
+body { background-color:rgb(237, 229, 235); }
+
+* { list-style: none; text-decoration: none; margin: 0px; padding: 0px;}
+
+
+/* Menu */
+
+#menu { text-align: center; position: fixed; padding-top: 25px; z-index: 10; width: 100%; top: 0px;}
+
+#menu li { display: inline; color: rgb(241, 189, 232); cursor: pointer; padding: 0 15px 15px 0; font-family: 'Pacifico', cursive; text-shadow: 1px 1px white;}
+
+#menu ul a li:hover { color:  rgb(153, 0, 153); }
+
+
+/* Titulo */
+
+#titulo-principal { position: relative; z-index: 10; }
+
+#titulodiv h1 { text-shadow: 2px 1px white; top: 50px;  color:rgb(241, 189, 232); font-family: 'Pacifico', cursive; text-align: center; font-size: 24px;}
+
+.fa-heart { color: rgb(231, 69, 112); padding: 15px;}
+
+#data { color: rgb(153, 0, 153); text-align: center; margin-top: 15px; font-family: 'Pacifico', cursive; font-size: 20px; position: relative; top: 170px;}
+
+#titulodiv { position: fixed; z-index: -10; top: -50px;  background: url("images/back1.jpg") no-repeat; height: 120vh; }
+
+#fundo { background-color: white; }
+
+/* Titulo de todos */
+
+h2 { text-align: center; font-family: 'Pacifico', cursive; font-size: 27px;  }
+
+/* Partes- Divisões */
+
+.conteudo { position: relative; top: 150px; }
+
+.partes { min-height: 100vh; width: 100%; max-width: 1600px; }
+
+#eventosdiv { background: url("images/back1.jpg") no-repeat; height: 800px;  background-size: 100% 100%; border-bottom: 2px solid black; position: relative; top: 40px;}
+
+#galeriadiv { background: url("images/back1.jpg") no-repeat; height: 1100px;  background-size: 100% 100%;  border-bottom: 2px solid black; position: relative; top: -30px; }
+
+#historiadiv { background: url("images/back1.jpg") no-repeat;   background-size: 100% 100%; border-bottom: 2px solid black;}
+
+#acomodacoesdiv { background: url("images/back1.jpg") no-repeat; height: 1100px;  background-size: 100% 100%; border-bottom: 2px solid black; position: relative; top: -30px;}
+
+#presentesdiv { background: url("images/back1.jpg") no-repeat;  background-repeat: no-repeat; background-size: 100% 100%;   border-bottom: 2px solid black; top: 20px;}
+
+#contatodiv { background: url("images/back1.jpg") no-repeat;   background-size: 100% 100%; border-bottom: 2px solid black; position: relative; top: -40px;}
+
+#elementos { position: relative; top: 100vh; }
+
+
+
+
+/* Galeria */
+
+#conteudo { margin-top: 20px; margin:auto; }
+
+#conteudo img { width: 270px !important; height: 270px !important;   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19) ; border: 2px solid white; margin: 35px; max-height:270px !important; max-height: 270px !important; padding: 15px;}
+
+.enfeite { width: 60%; height: 100px;  }
+
+.img-enfeite {position: relative; width: 50%; height: 250px; margin: auto; top: 50px; text-align: center;}
+
+#conteudo { display: flex; flex-direction: row; flex-wrap: wrap;   }
+
+.foto { flex-grow: 1; }
+
+
+/* Acomodacoes */
+
+
+.hotel { color: #c68c53; font-family: 'Pacifico', cursive; text-align: center;}
+
+.acomodacao {font-family: 'Pacifico', cursive; text-align: center; width: 40%; margin: auto;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding:25px; border: 2px solid #c68c53; margin-top: 50px; background-color: white;}
+
+.fa-bed, .fa-phone { text-shadow: 2px 2px #e6ccff; color: black;}
+
+
+
+/* Eventos */
+
+#eventosdiv .conteudo { top: 150px; }
+
+.eventos { font-family: 'Pacifico', cursive; background-color: white; padding: 25px; width: 40%; margin: auto; border: 2px solid #c68c53; text-align: center; margin-bottom: 10px; margin-top: 30px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.eventos h2 { color: #c68c53; }
+
+.eventos p { color: black; }
+
+
+/* Slider */
+
+.trs {-webkit-transition:all ease-out 0.5s; -moz-transition:all ease-out 0.5s; -o-transition:all ease-out 0.5s; -ms-transition:all ease-out 0.5s; transition:all ease-out 0.5s;}  
+
+#slider {position: relative; z-index: 1; }
+
+#slider a { position: absolute; top: 0; left: 0; opacity: 0;filter:alpha(opacity=0);  cursor: default;}
+
+.ativo {opacity: 1!important; filter:alpha(opacity=100)!important; position: relative; margin-left: auto; margin-right: auto;}
+
+/*controladores*/
+
+figure { display: block; height: 400px; z-index: -2; overflow: hidden; border: 5px solid white;}
+
+#slider img, #slider a { width: 100% !important; height: 400px; }
+
+#teste {z-index: -3; width: 600px; height: 400px; margin-right: auto; margin-left: auto; position: relative; top: 120px; }
+
+
+/*footer*/
+
+footer { margin-top: -40px; font-family: 'Pacifico', cursive; padding: 20px; position: relative; bottom: 0px; color: #8B008B; border-top: 20px solid white; border-bottom: 20px solid white; width: 100%; left: 0px; text-align: center; background-color: white; bottom: 0px;}
+
+footer .fa-heart { color: red; }
+
+#footer_cima { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+#footer_baixo { position: relative; top: 10px; }
+
+/* Menu extra */
+
+.extra { color: white; font-size: 25px; font-family: 'Pacifico', cursive; position: fixed; text-align: center; z-index: 12; display: none;}
+
+.extratexto { padding-left: 20px; }
+
+.teste { background-color: black; height: 90px; position: fixed; top: 0px; line-height: 60px; color: white;  }
+
+.teste li { color: white !important; }
+
+.teste li:hover { color:  rgb(153, 0, 153) !important; }
