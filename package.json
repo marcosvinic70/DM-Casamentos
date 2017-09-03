@@ -4,6 +4,12 @@
     "dependencies": {
         "encoding": "^0.1.12",
         "insecure": "0.0.4",
-        "nodemailer": "^4.1.0"
+        "nodemailer": "^4.1.0",
+        "vue": "^2.4.2"
+    },
+    "license": "UNLICENSED",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/marcosvinic70/DM-Casamentos.git"
     }
 }
