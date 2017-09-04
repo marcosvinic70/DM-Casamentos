@@ -17,20 +17,44 @@
 <body>
 
 <!-- Menu desktop -->
-	<div id="menu">
+	<div id="menu" >
 		<ul> <b>
-			<a id="index"><li>Inicio</li></a>
-			<a id="eventos"><li>Eventos</li></a>
-			<!-- <a id="historia"><li>Nossa História</li></a> -->
-			<a id="presentes"><li>Listas de presentes</li></a>
-			<a id="acomodacoes"><li>Acomodações</li></a>
-			<a id="galeria" ><li>Galeria</li></a>
-			<a id="contato"><li>Contato</li></a>
+			<a class="index"><li>Inicio</li></a>
+			<a class="eventosmen"><li>Eventos</li></a>
+			<!-- <a class="historia"><li>Nossa História</li></a> -->
+			<a class="presentes"><li>Listas de presentes</li></a>
+			<a class="acomodacoes"><li>Acomodações</li></a>
+			<a class="galeria" ><li>Galeria</li></a>
+			<a class="contato"><li>Contato</li></a>
 		</ul> </b>
 	</div>
 
 	<div class="extra">
 		<p class="extratexto"> Aline <i class="fa fa-heart animated infinite pulse" aria-hidden="true"></i> Mateus </p>
+	</div>
+
+<!-- Menu mobile -->
+	<div id="mobiletodo">
+	<div id="botao_menu" onclick="abrir_menu()">
+		<i class="fa fa-heart" aria-hidden="true"> Menu </i> 
+	</div>
+
+	<div id="menu_mobile">
+		<p id="fechar" onclick="fechar_menu()">X</p>
+
+			<div id="menumob">
+			<ul> <b>
+				<a class="index"><li>Inicio</li></a>
+				<a class="eventosmen"><li>Eventos</li></a>
+				<!-- <a class="historia"><li>Nossa História</li></a> -->
+				<a class="presentes"><li>Listas de presentes</li></a>
+				<a class="acomodacoes"><li>Acomodações</li></a>
+				<a class="galeria" ><li>Galeria</li></a>
+				<a class="contato"><li>Contato</li></a>
+			</ul> </b>
+
+			</div>
+	</div>
 	</div>
 
 <!-- Titulo -->
@@ -40,7 +64,6 @@
 		<h1 id="fundo">Aline C. Melo Ferrari<i class="fa fa-heart animated infinite pulse" aria-hidden="true"></i>Mateus Machado da Mota</h1>
 			<figure>
 		       <div id="slider">
-		          <a href="#" class="trs"><img src="images/foto1.jpg"/></a>
 		          <a href="#" class="trs"><img src="images/foto2.jpg" /></a>
 		          <a href="#" class="trs"><img src="images/foto3.jpg" /></a>
 		          <a href="#" class="trs"><img src="images/foto4.jpg" /></a>
@@ -87,15 +110,13 @@
 		<div class="conteudo">	
 			<h2>Lista de presentes</h2>
 			<div class="eventos">
-				<p class="titulo">Nome da loja: </p> <p></p>
-				<p class="titulo">Código da Lista: </p> <p></p>
-				<p class="titulo">Site:</p> <p></p>
+				<p class="titulo">Nome da loja: Havan </p> <p></p>
+				<p class="titulo"> <a href="http://lista.havan.com.br/Convidado/ItensLista/1/11728965">Site</p> </a> 
 			</div>
 
 			<div class="eventos">
-				<p class="titulo">Nome da loja: </p> <p></p>
-				<p class="titulo">Código da Lista: </p> <p></p>
-				<p class="titulo">Site:</p> <p></p>
+				<p class="titulo">Nome da loja: Extra </p> <p></p>
+				<p class="titulo"> <a href="http://casamento.extra.com.br/#/lista-presentes/644944">Site</p> </a> 
 			</div>
 		</div>
 	</div>

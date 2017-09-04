@@ -1,47 +1,64 @@
-	$(function () { 
-    $("#index").click(function () { 
+	
+var aux = true;
+
+    $(function () { 
+    $(".index").click(function () { 
+        document.getElementById("menu_mobile").style = "display:none";
+        aux = true;
 	    $('html, body').animate({
 	        scrollTop: $("#topo").offset().top
 	    }, 1500);
    		});
 	}); 
 	$(function () { 
-    $("#galeria").click(function () { 
+    $(".galeria").click(function () { 
+        document.getElementById("menu_mobile").style = "display:none";
+        aux = true;
 	    $('html, body').animate({
 	        scrollTop: $("#galeriadiv").offset().top
 	    }, 1500);
    		});
 	}); 
 	$(function () { 
-    $("#historia").click(function () { 
+    $(".historia").click(function () { 
+        document.getElementById("menu_mobile").style = "display:none";
+        aux = true;
 	    $('html, body').animate({
 	        scrollTop: $("#historiadiv").offset().top
 	    }, 1500);
    		});
 	}); 
 	$(function () { 
-    $("#acomodacoes").click(function () { 
+    $(".acomodacoes").click(function () { 
+        document.getElementById("menu_mobile").style = "display:none";
+        aux = true;
 	    $('html, body').animate({
 	        scrollTop: $("#acomodacoesdiv").offset().top
 	    }, 1500);
    		});
 	}); 
 	$(function () { 
-    $("#presentes").click(function () { 
+    $(".presentes").click(function () { 
+        document.getElementById("menu_mobile").style = "display:none";
+        aux = true;
 	    $('html, body').animate({
 	        scrollTop: $("#presentesdiv").offset().top
 	    }, 1500);
    		});
 	}); 
 	$(function () { 
-    $("#eventos").click(function () { 
+    $(".eventosmen").click(function () { 
+        document.getElementById("menu_mobile").style = "display:none";
+        aux = true;
 	    $('html, body').animate({
 	        scrollTop: $("#eventosdiv").offset().top
 	    }, 1500);
    		});
 	}); 
 	$(function () { 
-    $("#contato").click(function () { 
+    $(".contato").click(function () {
+        document.getElementById("menu_mobile").style = "display:none";
+        aux = true; 
 	    $('html, body').animate({
 	        scrollTop: $("#contatodiv").offset().top
 	    }, 1500);
@@ -135,3 +152,23 @@ $(window).scroll(function() {
         $(".extra").css("display", "none");
     }
 });
+
+
+function abrir_menu (){
+
+    if (aux == true) { 
+        document.getElementById("menu_mobile").style = "display:block";
+        aux = false;
+    }
+    else
+    {
+        document.getElementById("menu_mobile").style = "display:none";
+        aux = true;
+    }
+    
+}
+
+function fechar_menu (){
+    document.getElementById("menu_mobile").style = "display: none;";
+    aux = true;
+}

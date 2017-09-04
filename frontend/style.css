@@ -4,10 +4,9 @@ body { background-color:rgb(237, 229, 235); }
 
 * { list-style: none; text-decoration: none; margin: 0px; padding: 0px;}
 
-
 /* Menu */
 
-#menu { text-align: center; position: fixed; padding-top: 25px; z-index: 10; width: 100%; top: 0px;}
+#menu { text-align: center; position: fixed; padding-top: 15px; z-index: 10; width: 100%; top: -10px; background-color: white; height: 40px; }
 
 #menu li { display: inline; color: rgb(241, 189, 232); cursor: pointer; padding: 0 15px 15px 0; font-family: 'Pacifico', cursive; text-shadow: 1px 1px white;}
 
@@ -20,11 +19,11 @@ body { background-color:rgb(237, 229, 235); }
 
 #titulodiv h1 { text-shadow: 2px 1px white; top: 50px;  color:rgb(241, 189, 232); font-family: 'Pacifico', cursive; text-align: center; font-size: 24px;}
 
-.fa-heart { color: rgb(231, 69, 112); padding: 15px;}
+#titulodiv .fa-heart { color: rgb(231, 69, 112); padding: 15px;}
 
 #data { color: rgb(153, 0, 153); text-align: center; margin-top: 15px; font-family: 'Pacifico', cursive; font-size: 20px; position: relative; top: 170px;}
 
-#titulodiv { position: fixed; z-index: -10; top: -50px;  background: url("images/back1.jpg") no-repeat; height: 120vh; }
+#titulodiv { position: fixed; z-index: -10; top: -50px;  background-size: 100% 50%; height: 120vh; }
 
 #fundo { background-color: white; }
 
@@ -34,21 +33,21 @@ h2 { text-align: center; font-family: 'Pacifico', cursive; font-size: 27px;  }
 
 /* Partes- Divisões */
 
-.conteudo { position: relative; top: 150px; }
+.conteudo { position: relative; top: 150px; max-width: 1600px;} 
 
-.partes { min-height: 100vh; width: 100%; max-width: 1600px; }
+.partes { min-height: 100vh; width: 100%;  max-height: 1100px;  }
 
-#eventosdiv { background: url("images/back1.jpg") no-repeat; height: 800px;  background-size: 100% 100%; border-bottom: 2px solid black; position: relative; top: 40px;}
+#eventosdiv { background-color:rgb(237, 229, 235); height: 800px;  background-size: 100% 100%; border-bottom: 2px solid black; position: relative; top: 40px;}
 
-#galeriadiv { background: url("images/back1.jpg") no-repeat; height: 1100px;  background-size: 100% 100%;  border-bottom: 2px solid black; position: relative; top: -30px; }
+#galeriadiv { background-color:rgb(237, 229, 235); height: 1100px;  background-size: 100% 100%;  border-bottom: 2px solid black; position: relative; top: -30px; }
 
-#historiadiv { background: url("images/back1.jpg") no-repeat;   background-size: 100% 100%; border-bottom: 2px solid black;}
+#historiadiv { background-color:rgb(237, 229, 235); background-size: 100% 100%; border-bottom: 2px solid black; position: relative; top: 100px;}
 
-#acomodacoesdiv { background: url("images/back1.jpg") no-repeat; height: 1100px;  background-size: 100% 100%; border-bottom: 2px solid black; position: relative; top: -30px;}
+#acomodacoesdiv { background-color:rgb(237, 229, 235); height: 1100px;  background-size: 100% 100%; border-bottom: 2px solid black; position: relative; }
 
-#presentesdiv { background: url("images/back1.jpg") no-repeat;  background-repeat: no-repeat; background-size: 100% 100%;   border-bottom: 2px solid black; top: 20px;}
+#presentesdiv { background-color:rgb(237, 229, 235);  background-repeat: no-repeat; background-size: 100% 100%;   border-bottom: 2px solid black; top: 20px;}
 
-#contatodiv { background: url("images/back1.jpg") no-repeat;   background-size: 100% 100%; border-bottom: 2px solid black; position: relative; top: -40px;}
+#contatodiv { background-color:rgb(237, 229, 235);  background-size: 100% 100%; border-bottom: 2px solid black; position: relative; top: -40px;}
 
 #elementos { position: relative; top: 100vh; }
 
@@ -113,7 +112,7 @@ figure { display: block; height: 400px; z-index: -2; overflow: hidden; border: 5
 
 /*footer*/
 
-footer { margin-top: -40px; font-family: 'Pacifico', cursive; padding: 20px; position: relative; bottom: 0px; color: #8B008B; border-top: 20px solid white; border-bottom: 20px solid white; width: 100%; left: 0px; text-align: center; background-color: white; bottom: 0px;}
+footer { margin-top: -40px; font-family: 'Pacifico', cursive; position: relative; bottom: 0px; color: #8B008B; border-top: 20px solid white; border-bottom: 20px solid white; width: 100%; left: 0px; text-align: center; background-color: white; bottom: 0px;}
 
 footer .fa-heart { color: red; }
 
@@ -123,12 +122,111 @@ footer .fa-heart { color: red; }
 
 /* Menu extra */
 
-.extra { color: white; font-size: 25px; font-family: 'Pacifico', cursive; position: fixed; text-align: center; z-index: 12; display: none;}
+.extra { display: none; color: purple; font-size: 25px; font-family: 'Pacifico', cursive; position: fixed; text-align: center; z-index: 42; -ms-transform: rotate(-7deg);  -webkit-transform: rotate(-7deg); transform: rotate(-7deg); }
 
-.extratexto { padding-left: 20px; }
+.extratexto { padding-left: 10px; z-index: 42; padding-top: 10px;}
 
-.teste { background-color: black; height: 90px; position: fixed; top: 0px; line-height: 60px; color: white;  }
+.teste { background-color: white; height: 120px; position: fixed; top: 0px; line-height: 70px; padding-bottom: 50px; border-bottom: 2px solid purple; }
 
-.teste li { color: white !important; }
+.teste li { color: pink !important; }
 
 .teste li:hover { color:  rgb(153, 0, 153) !important; }
+
+/*menu mobile*/
+
+#mobiletodo { display: none; position: fixed; width: 100%; z-index: 100; }
+
+#botao_menu {  display: none; text-align: center;  color: white; font-family: 'Pacifico', cursive; cursor: pointer;  z-index: 100; top: 15px; }
+
+#botao_menu i { background-color: white; border-radius: 20px; padding: 20px; border: 2px solid #dfbf9f; color: purple; }
+
+#fechar { cursor: pointer; }
+
+#menu_mobile { z-index: 100; top: 25px; font-family: 'Pacifico', cursive; background-color: white; border-radius: 20px; text-align: center; margin-bottom: 30px; width: 75%; border: 2px solid #dfbf9f ; color: #c68c53; margin-left: auto; margin-right: auto;}
+
+#menu_mobile a { color: #c68c53; cursor: pointer; }
+
+#menu_mobile li:hover { color:#dfbf9f; }
+
+#menu_mobile p:hover { color:purple; }
+
+#fechar { float: right;  right: 15px; top: 10px; background-color: #dfbf9f; color: white; border-radius: 20px; width: 30px; height: 30px;}
+
+
+
+/*  Mobile  */
+@media screen and (max-width: 580px) {
+
+    #menu { display: none; }
+
+    #botao_menu { display: block; }
+
+    #mobiletodo { display: block; }
+
+	#menu_mobile { display: none; }
+
+	/* div principais */
+
+	.conteudo { position: relative; max-width: none; width: 100%; background-color:rgb(237, 229, 235); top: 70px; } 
+
+	.partes { min-height: none; max-height: none; width: 100%; }
+
+	#elementos {  width: 100vw; }
+
+
+
+	#galeriadiv { height: 2500px; }
+
+
+	/* Slider mobile */
+
+	figure { height: 350px;}
+
+	#slider img, #slider a { width: 100% !important; height: 350px; }
+
+	#teste {z-index: -3; width: 400px; height: 450px; top: 120px; }
+
+	#data { top: 120px;}
+
+	/* divs conteudo todas */
+
+
+	#eventosdiv .conteudo { top: 30px; }
+
+	.eventos {  padding: 25px; width: 400px ;  margin-bottom: 10px; margin-top: 30px;  }
+
+}
+
+@media screen and ( max-width: 970px ) {
+
+	.extra, .extratexto { display: none; }
+}
+
+@media screen and ( min-width: 1024px ) {
+
+	#galeriadiv { height: 1400px; }
+
+	.partes { max-height: 2000px; }
+}
+
+@media screen and ( min-width: 1480px ) {
+
+	figure { height: 700px;}
+
+	#slider img, #slider a { height: 700px; }
+
+	#teste { width: 700px; height: 400px; top: 200px;  }
+
+	#data { top: 600px;}
+
+	.conteudo { max-width: 1250px; margin-left: auto; margin-right: auto; } 
+
+	#galeriadiv .partes { height: 1550px; }
+
+	#galeriadiv { height: 450px; }
+
+	.partes { max-height: 2000px; }
+
+	footer { margin-top: -280px; bottom: 0px; }
+}
+
